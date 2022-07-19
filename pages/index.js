@@ -9,7 +9,7 @@ export default function Home({ articles }) {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch(`https://webdevelopernews-4qfxsfmdl-jenniferlang1921.vercel.app/api/articles`)
+  const res = await fetch(`https://webdevelopernews.vercel.app/api/articles`)
   const articles = await res.json()
 
   return {

@@ -1,4 +1,3 @@
-import { server } from '../../../config'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Meta from '../../../components/Meta'
@@ -19,7 +18,7 @@ const article = ({ article }) => {
 }
 
 export const getStaticProps = async (context) => {
-  const res = await fetch(`https://webdevelopernews-4qfxsfmdl-jenniferlang1921.vercel.app/api/articles/${context.params.id}`)
+  const res = await fetch(`https://webdevelopernews.vercel.app/api/articles/${context.params.id}`)
 
   const article = await res.json()
 
