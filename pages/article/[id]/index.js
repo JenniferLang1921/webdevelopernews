@@ -30,7 +30,7 @@ export const getStaticProps = async (context) => {
 }
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`${server}/api/articles`)
+  const res = await fetch(`https://webdevelopernews.vercel.app/api/articles`)
 
   const articles = await res.json()
 
