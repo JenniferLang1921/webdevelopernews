@@ -19,7 +19,7 @@ const article = ({ article }) => {
 }
 
 export const getStaticProps = async (context) => {
-  const res = await fetch(`${server}/api/articles/${context.params.id}`)
+  const res = await fetch(`https://webdevelopernews-4qfxsfmdl-jenniferlang1921.vercel.app/api/articles/${context.params.id}`)
 
   const article = await res.json()
 
